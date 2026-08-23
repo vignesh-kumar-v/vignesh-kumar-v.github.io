@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigneshkumar Venugopal — ML Systems Engineer</title>
+<meta name="description" content="ML systems engineer building the layer between research and hardware — CUDA kernels, quantized LLMs, agentic architectures and production MLOps. MS Data Science @ Arizona State University.">
+<meta name="author" content="Vigneshkumar Venugopal">
+<meta name="theme-color" content="#0a0b0d">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vigneshkumar Venugopal — ML Systems Engineer">
+<meta property="og:description" content="CUDA kernels, quantized LLMs, agentic architectures and production MLOps.">
+<meta property="og:url" content="https://vignesh-kumar-v.github.io/">
+<meta property="og:image" content="https://vignesh-kumar-v.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vigneshkumar Venugopal — ML systems at the metal. CUDA kernels, quantized LLMs, agentic architectures, production MLOps.">
+<meta property="og:site_name" content="Vigneshkumar Venugopal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vigneshkumar Venugopal — ML Systems Engineer">
+<meta name="twitter:description" content="CUDA kernels, quantized LLMs, agentic architectures and production MLOps.">
+<meta name="twitter:image" content="https://vignesh-kumar-v.github.io/assets/img/og.png">
+
+<link rel="canonical" href="https://vignesh-kumar-v.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0b0d'/%3E%3Cpath d='M24 30 L50 74 L76 30' fill='none' stroke='%235b8cff' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a href="#projects" class="skip-link">Skip to projects</a>
+
+<!-- ══════════════ NAV ══════════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <span class="nav__mark" aria-hidden="true">V</span>
+      <span class="nav__name">Vigneshkumar<span class="nav__dim"> Venugopal</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#projects">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="kbd-btn" id="paletteOpen" aria-label="Open command palette">
+        <span>Jump to</span><kbd>⌘</kbd><kbd>K</kbd>
+      </button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#projects">Work</a>
+  <a href="#experience">Experience</a>
+  <a href="#research">Research</a>
+  <a href="#stack">Stack</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="home">
+  <canvas class="hero__canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="wrap hero__inner">
+    <p class="hero__eyebrow reveal">
+      <span class="pulse" aria-hidden="true"></span>
+      Tempe, AZ &nbsp;·&nbsp; Open to 2026 internships &amp; nationwide relocation
+    </p>
+
+    <h1 class="hero__title reveal" data-delay="1">
+      I build the layer<br>
+      between <em>research</em><br>
+      and <em>the metal</em>.
+    </h1>
+
+    <p class="hero__lede reveal" data-delay="2">
+      ML systems engineer working where model architecture meets hardware — hand-written
+      <strong>CUDA kernels</strong>, <strong>4-bit quantized LLMs</strong> that fit on a laptop,
+      <strong>multi-agent systems</strong> that reason across sessions, and the
+      <strong>MLOps</strong> pipelines that keep all of it honest in production.
+    </p>
+
+    <div class="hero__cta reveal" data-delay="3">
+      <a class="btn btn--primary" href="#projects">
+        Explore the work
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="btn" href="https://github.com/vignesh-kumar-v" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.58.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/vignesh5756" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.9 21h4.2V9.4H2.9V21zM9.6 9.4h4v1.6h.06c.56-1 1.93-2.1 3.97-2.1 4.25 0 5.03 2.7 5.03 6.22V21h-4.2v-5.1c0-1.22-.02-2.8-1.75-2.8-1.76 0-2.03 1.34-2.03 2.72V21H9.6V9.4z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn" href="assets/Vigneshkumar-Venugopal-Resume.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7.5 10.5L12 15l4.5-4.5M4 19h16"/></svg>
+        Résumé
+      </a>
+      <button class="btn btn--ghost" id="copyEmail" data-email="vvenug15@asu.edu">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6 9-6"/></svg>
+        <span class="copy-label">vvenug15@asu.edu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ══════════════ METRICS TICKER ══════════════ -->
+<section class="ticker" aria-label="Selected results">
+  <div class="ticker__track">
+    <div class="ticker__set">
+      <span><b>~175</b> tok/s MLX decode on Apple Silicon</span><i>◆</i>
+      <span><b>1.7×</b> speedup on fused CUDA LayerNorm</span><i>◆</i>
+      <span><b>0.9998</b> cosine parity vs CUDA baseline</span><i>◆</i>
+      <span><b>96.4%</b> brain-tumour classification accuracy</span><i>◆</i>
+      <span><b>0.74%</b> MAPE — SOTA hybrid-energy forecast</span><i>◆</i>
+      <span><b>&lt;6 GB</b> VRAM for a 3B fine-tuned LLM</span><i>◆</i>
+      <span><b>&lt;30 ms</b> production inference latency</span><i>◆</i>
+      <span><b>2</b> peer-reviewed Elsevier publications</span><i>◆</i>
+    </div>
+    <div class="ticker__set" aria-hidden="true">
+      <span><b>~175</b> tok/s MLX decode on Apple Silicon</span><i>◆</i>
+      <span><b>1.7×</b> speedup on fused CUDA LayerNorm</span><i>◆</i>
+      <span><b>0.9998</b> cosine parity vs CUDA baseline</span><i>◆</i>
+      <span><b>96.4%</b> brain-tumour classification accuracy</span><i>◆</i>
+      <span><b>0.74%</b> MAPE — SOTA hybrid-energy forecast</span><i>◆</i>
+      <span><b>&lt;6 GB</b> VRAM for a 3B fine-tuned LLM</span><i>◆</i>
+      <span><b>&lt;30 ms</b> production inference latency</span><i>◆</i>
+      <span><b>2</b> peer-reviewed Elsevier publications</span><i>◆</i>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about__text reveal">
+      <p class="sec-label"><span>01</span> Profile</p>
+      <h2 class="sec-title">Most people stop at <em>"the model works."</em><br>I'm interested in what happens after.</h2>
+      <p>
+        I'm <strong>Vigneshkumar Venugopal</strong> — an MS Data Science candidate at
+        <strong>Arizona State University</strong> and a former research engineer at
+        <strong>ERNET India</strong>, where I shipped medical imaging pipelines that radiologists actually used.
+      </p>
+      <p>
+        My work lives in the unglamorous middle: the fused kernel that makes training 1.7× faster, the
+        quantization scheme that drops a 3B model under 6 GB of VRAM, the memory architecture that stops
+        an agent from contradicting itself three sessions later. I write CUDA when PyTorch is too slow,
+        port models to MLX when CUDA isn't there, and wrap the result in FastAPI, Docker and CI so it
+        survives contact with reality.
+      </p>
+      <p>
+        Alongside that, I've co-authored <strong>two peer-reviewed papers</strong> in Elsevier journals on
+        deep learning for renewable-energy systems — a Transformer-LSTM ensemble that beat every RNN
+        baseline we tested, and a multi-objective NSGA-II optimizer for green hydrogen production.
+      </p>
+      <p class="about__sign">Currently looking for <strong>ML engineering / ML systems</strong> roles and internships.</p>
+    </div>
+
+    <aside class="about__side reveal" data-delay="1">
+      <div class="card card--stat">
+        <p class="card__k">Education</p>
+        <div class="edu">
+          <div class="edu__row">
+            <div>
+              <h3>Arizona State University</h3>
+              <p>MS, Data Science &nbsp;·&nbsp; CGPA 3.56 / 4.00</p>
+            </div>
+            <span class="chip">Aug 2025 — May 2027</span>
+          </div>
+          <div class="edu__row">
+            <div>
+              <h3>Vellore Institute of Technology</h3>
+              <p>BTech, Computer Science</p>
+            </div>
+            <span class="chip">Aug 2020 — May 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--stat">
+        <p class="card__k">At a glance</p>
+        <ul class="glance">
+          <li><b>14</b><span>public repositories</span></li>
+          <li><b>2</b><span>Elsevier publications</span></li>
+          <li><b>3B</b><span>params fine-tuned on consumer HW</span></li>
+          <li><b>336</b><span>tests on a single side project</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section class="section section--alt" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label"><span>02</span> Selected work</p>
+        <h2 class="sec-title">Ten projects, one thesis:<br>make big models run on small machines.</h2>
+      </div>
+      <p class="sec-note">Every project below is open source. Click a card to read the code.</p>
+    </div>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter projects">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All <b>10</b></button>
+      <button class="filter" data-filter="systems" role="tab" aria-selected="false">Systems &amp; Kernels <b>3</b></button>
+      <button class="filter" data-filter="llm" role="tab" aria-selected="false">LLMs &amp; Fine-tuning <b>4</b></button>
+      <button class="filter" data-filter="agents" role="tab" aria-selected="false">Agentic <b>4</b></button>
+      <button class="filter" data-filter="mlops" role="tab" aria-selected="false">MLOps <b>3</b></button>
+      <button class="filter" data-filter="vision" role="tab" aria-selected="false">Vision <b>1</b></button>
+    </div>
+
+    <div class="grid" id="projectGrid">
+
+      <!-- 1 -->
+      <article class="proj proj--wide reveal" data-tags="systems llm">
+        <div class="proj__top">
+          <p class="proj__idx">01</p>
+          <div class="proj__tags"><span>QLoRA</span><span>Qwen2.5-3B</span><span>llama.cpp</span><span>GGUF</span></div>
+        </div>
+        <h3 class="proj__name">NeuralScholar</h3>
+        <p class="proj__sub">A 3B language model fine-tuned to research and explain ML/DL concepts — locally.</p>
+        <p class="proj__body">
+          Fine-tuned Qwen2.5-3B with <strong>QLoRA (4-bit NF4 + double quantization)</strong> on a 100K-sample corpus
+          I built myself from ArXiv, StackExchange and Distill.pub — with MinHash LSH deduplication stripping ~35% of
+          redundant data. A two-stage router pairs the local SLM with frontier models (Gemini / Claude), so the
+          cheap model handles what it can and only escalates when it must.
+        </p>
+        <ul class="metrics">
+          <li><b>+18%</b><span>domain accuracy</span></li>
+          <li><b>−65%</b><span>GPU memory</span></li>
+          <li><b>~45</b><span>tok/s local</span></li>
+          <li><b>−60%</b><span>API token cost</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/NeuralScholar" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 2 -->
+      <article class="proj reveal" data-tags="systems" data-delay="1">
+        <div class="proj__top">
+          <p class="proj__idx">02</p>
+          <div class="proj__tags"><span>CUDA C++</span><span>PyTorch</span><span>Nsight</span></div>
+        </div>
+        <h3 class="proj__name">NanoLLM</h3>
+        <p class="proj__sub">A GPT-2 class transformer written from scratch — then made fast by hand.</p>
+        <p class="proj__body">
+          Decoder-only transformer built from zero in PyTorch and trained on TinyStories, then I went a layer
+          deeper: <strong>three progressive versions of a fused LayerNorm CUDA kernel</strong> using shared-memory
+          tree reduction, Welford's algorithm with warp shuffles, and vectorized <code>float4</code> access —
+          profiled with Nsight Compute and NVTX markers.
+        </p>
+        <ul class="metrics">
+          <li><b>1.7×</b><span>kernel speedup</span></li>
+          <li><b>2.5×</b><span>train throughput</span></li>
+          <li><b>−30%</b><span>peak VRAM</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/LLMs" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 3 -->
+      <article class="proj reveal" data-tags="systems vision" data-delay="2">
+        <div class="proj__top">
+          <p class="proj__idx">03</p>
+          <div class="proj__tags"><span>MLX</span><span>Apple Silicon</span><span>MoE</span></div>
+        </div>
+        <h3 class="proj__name">MLX-OCR-Unlimited</h3>
+        <p class="proj__sub">A 3.3B DeepSeek-OCR model ported to Apple Silicon with zero PyTorch at runtime.</p>
+        <p class="proj__body">
+          Pure MLX inference pipeline: a stacked <strong>MoE layer using batched <code>gather_mm</code></strong>,
+          a sliding KV cache with pinned image-prompt context, and bit-exact position-embedding resizing that
+          matches PyTorch's bicubic-antialias interpolation via cached separable matrices.
+        </p>
+        <ul class="metrics">
+          <li><b>~175</b><span>tok/s decode</span></li>
+          <li><b>0.9998</b><span>cosine parity</span></li>
+          <li><b>~6 GB</b><span>memory</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/mlx-ocr-unlimited" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 4 -->
+      <article class="proj proj--wide reveal" data-tags="agents">
+        <div class="proj__top">
+          <p class="proj__idx">04</p>
+          <div class="proj__tags"><span>LangGraph</span><span>Qdrant</span><span>SQLite</span><span>Ollama</span></div>
+        </div>
+        <h3 class="proj__name">Engram</h3>
+        <p class="proj__sub">Biologically-inspired hierarchical memory for LLM coding agents.</p>
+        <p class="proj__body">
+          Coding agents forget across sessions, and worse, they don't notice when new information contradicts
+          what they already "know." Engram fixes both with an <strong>episodic buffer → LLM-driven consolidation
+          (promote / compress / discard) → long-term semantic store</strong> architecture, plus a background agent
+          that actively hunts for contradictions. I also wrote <strong>LHMBench</strong>, an original 6-scenario
+          benchmark, to prove it — it's the only system tested that detected contradictions at all.
+        </p>
+        <ul class="metrics">
+          <li><b>100%</b><span>LHMBench score</span></li>
+          <li><b>1.0 / 0.0</b><span>vs. RAG on contradictions</span></li>
+          <li><b>336</b><span>passing tests</span></li>
+          <li><b>8</b><span>simulated lifecycles</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/Engram" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 5 -->
+      <article class="proj reveal" data-tags="agents llm" data-delay="1">
+        <div class="proj__top">
+          <p class="proj__idx">05</p>
+          <div class="proj__tags"><span>LangGraph</span><span>Vertex AI</span><span>NVIDIA NIM</span></div>
+        </div>
+        <h3 class="proj__name">PaperCut</h3>
+        <p class="proj__sub">Reads any ArXiv ML paper, emits a validated PyTorch scaffold and CUDA blueprint.</p>
+        <p class="proj__body">
+          A cascading, stateful agent network orchestrating <strong>four frontier models</strong> — Gemini 2.5
+          Flash/Pro, Qwen2.5-Coder 32B and Nemotron Super 49B — behind scope-validation layers. Papers become a
+          JSON <code>ResearchContract</code>, which becomes <code>model.py</code>, <code>train.py</code>,
+          <code>dataset.py</code> and annotated CUDA C++ stubs. Streams over SSE.
+        </p>
+        <ul class="metrics">
+          <li><b>&gt;95%</b><span>validation acc.</span></li>
+          <li><b>&lt;200 ms</b><span>TTFT</span></li>
+          <li><b>−75%</b><span>boilerplate time</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/PaperCut" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 6 -->
+      <article class="proj reveal" data-tags="llm mlops" data-delay="2">
+        <div class="proj__top">
+          <p class="proj__idx">06</p>
+          <div class="proj__tags"><span>Qdrant</span><span>Celery</span><span>Redis</span><span>RAGAS</span></div>
+        </div>
+        <h3 class="proj__name">FlashContext</h3>
+        <p class="proj__sub">Session-isolated RAG that builds technical memory on demand.</p>
+        <p class="proj__body">
+          A local LLM extracts keywords, dual-strategy ranking queries ArXiv, and ~25 papers vectorize into
+          Qdrant in under 15 seconds. The interesting part is the <strong>layout-aware PDF chunker</strong>:
+          PyMuPDF font-size baselines split text along real semantic section boundaries instead of arbitrary
+          character counts.
+        </p>
+        <ul class="metrics">
+          <li><b>+22%</b><span>Hit Rate@5</span></li>
+          <li><b>&lt;15 s</b><span>25-paper ingest</span></li>
+          <li><b>&gt;40</b><span>tok/s stream</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/FlashContext" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 7 -->
+      <article class="proj reveal" data-tags="mlops">
+        <div class="proj__top">
+          <p class="proj__idx">07</p>
+          <div class="proj__tags"><span>LightGBM</span><span>Optuna</span><span>SHAP</span><span>Docker</span></div>
+        </div>
+        <h3 class="proj__name">TelcoFlow</h3>
+        <p class="proj__sub">An end-to-end MLOps pipeline for churn prediction — the boring parts done properly.</p>
+        <p class="proj__body">
+          Bayesian hyperparameter search across LightGBM and XGBoost, SHAP attributions for stakeholders, and a
+          GitHub Actions pipeline that runs schema validation, unit tests, retraining and artifact versioning on
+          <em>every commit</em>. Evidently AI + KS-tests watch for covariate drift in production.
+        </p>
+        <ul class="metrics">
+          <li><b>0.86</b><span>ROC-AUC (+12%)</span></li>
+          <li><b>&lt;30 ms</b><span>API latency</span></li>
+          <li><b>7K+</b><span>records</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/TelcoFlow-CI-CD" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 8 -->
+      <article class="proj reveal" data-tags="agents" data-delay="1">
+        <div class="proj__top">
+          <p class="proj__idx">08</p>
+          <div class="proj__tags"><span>Google ADK</span><span>asyncio</span></div>
+        </div>
+        <h3 class="proj__name">AEGIS</h3>
+        <p class="proj__sub">A distributed agent mesh for real-time flood monitoring and emergency triage.</p>
+        <p class="proj__body">
+          Built on Google's Agent Development Kit: specialized roles — <em>FloodMonitor</em>, <em>TriageAgent</em>,
+          <em>Medical</em> and <em>Infra Sentinels</em> — coordinated through asyncio for non-blocking parallel
+          situational analysis, with separated modules for agent lifecycles, tool integration and consolidated
+          mission reporting.
+        </p>
+        <ul class="metrics">
+          <li><b>4+</b><span>specialized agents</span></li>
+          <li><b>async</b><span>parallel triage</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/AEGIS-Multi-Agent-system" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 9 -->
+      <article class="proj reveal" data-tags="llm mlops" data-delay="2">
+        <div class="proj__top">
+          <p class="proj__idx">09</p>
+          <div class="proj__tags"><span>SecBERT</span><span>Transformers</span><span>CVSS v3.1</span></div>
+        </div>
+        <h3 class="proj__name">VulnTriage-LLM</h3>
+        <p class="proj__sub">Predicting CVE severity from raw text — fine-tuned encoder vs. zero-shot LLM.</p>
+        <p class="proj__body">
+          A comparative triage engine that pits zero-shot LLM inference against a fine-tuned cybersecurity
+          encoder (SecBERT) for mapping natural-language descriptions to CVSS v3.1 severity, then an
+          <strong>agentic layer</strong> turns raw model output into analyst-ready triage reports.
+        </p>
+        <ul class="metrics">
+          <li><b>0.4253</b><span>baseline Macro F1</span></li>
+          <li><b>2</b><span>model families compared</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/VulnTriage-LLM" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- 10 -->
+      <article class="proj reveal" data-tags="agents">
+        <div class="proj__top">
+          <p class="proj__idx">10</p>
+          <div class="proj__tags"><span>NeMo Agent Toolkit</span><span>NVIDIA</span></div>
+        </div>
+        <h3 class="proj__name">CodeSentinel</h3>
+        <p class="proj__sub">Autonomous multi-agent code review and self-healing.</p>
+        <p class="proj__body">
+          Built on NVIDIA's NeMo Agent Toolkit — agents review a codebase, identify defects, and propose or
+          apply their own fixes rather than just filing complaints.
+        </p>
+        <ul class="metrics">
+          <li><b>self-healing</b><span>review loop</span></li>
+        </ul>
+        <a class="proj__link" href="https://github.com/vignesh-kumar-v/codesentinel" target="_blank" rel="noopener">
+          View repository <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+    </div>
+
+    <p class="grid__empty" id="gridEmpty" hidden>No projects in that category yet.</p>
+
+    <div class="more reveal">
+      <p>Also on GitHub — <a href="https://github.com/vignesh-kumar-v/job-craft" target="_blank" rel="noopener">job-craft</a>,
+        <a href="https://github.com/vignesh-kumar-v/ClinIQ" target="_blank" rel="noopener">ClinIQ</a>,
+        <a href="https://github.com/vignesh-kumar-v/OptiFuse" target="_blank" rel="noopener">OptiFuse</a> and
+        <a href="https://github.com/vignesh-kumar-v/FreshCart" target="_blank" rel="noopener">FreshCart</a>.</p>
+      <a class="btn btn--primary" href="https://github.com/vignesh-kumar-v?tab=repositories" target="_blank" rel="noopener">
+        All 14 repositories
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label"><span>03</span> Experience</p>
+        <h2 class="sec-title">Shipping models into<br>a hospital workflow.</h2>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <article class="tl reveal">
+        <div class="tl__meta">
+          <span class="chip chip--live">May 2024 — Jun 2025</span>
+          <p class="tl__loc">Chennai, India</p>
+        </div>
+        <div class="tl__body">
+          <h3>Research Intern — Deep Learning</h3>
+          <p class="tl__org">Education and Research Network of India (ERNET)</p>
+          <ul class="bullets">
+            <li>Architected a multi-class <strong>classification and segmentation pipeline</strong> identifying glioma, meningioma and pituitary tumours, reaching <strong>96.4% accuracy</strong> on real-world MRI datasets.</li>
+            <li>Developed a <strong>ResUNet</strong> semantic segmentation model at a <strong>0.89 Dice coefficient</strong>, automating tumour boundary delineation and cutting manual volume-estimation time for radiologists by <strong>70%</strong>.</li>
+            <li>Optimized high-resolution <strong>NIfTI / DICOM</strong> data-loading with MONAI — a <strong>35% reduction in training latency</strong> and efficient multi-GPU training.</li>
+          </ul>
+          <div class="tl__tags"><span>PyTorch</span><span>MONAI</span><span>ResUNet</span><span>DICOM</span><span>Multi-GPU</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ RESEARCH ══════════════ -->
+<section class="section section--alt" id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label"><span>04</span> Publications</p>
+        <h2 class="sec-title">Peer-reviewed work in<br>Elsevier journals.</h2>
+      </div>
+      <p class="sec-note">Deep learning and evolutionary optimization applied to renewable energy systems.</p>
+    </div>
+
+    <div class="papers">
+      <article class="paper reveal">
+        <div class="paper__badge">
+          <span class="chip">Renewable Energy · 2025</span>
+          <p class="paper__doi">10.1016/j.renene.2025.122369</p>
+        </div>
+        <h3>A novel ensemble machine learning approach for optimizing sustainability and green hydrogen production in hybrid renewable-based organic Rankine cycle-operated PEM electrolyser systems</h3>
+        <ul class="bullets">
+          <li>Designed an <strong>ensembled Transformer-LSTM</strong> architecture, fusing multi-head attention with LSTM layers to capture both long- and short-range temporal dependencies and sidestep the vanishing-gradient and hyperparameter sensitivity of plain RNNs.</li>
+          <li>Applied <strong>integrated gradients</strong> for interpretability, confirming the network's attributions aligned with real-world physical constraints — with 5-fold cross-validation for generalizability.</li>
+          <li>Achieved a <strong>0.74% MAPE</strong>, outperforming LSTM (0.89%), RNN (1.69%) and FFNN (2.1%) baselines across multi-variable time-series forecasting.</li>
+        </ul>
+        <a class="proj__link" href="https://doi.org/10.1016/j.renene.2025.122369" target="_blank" rel="noopener">
+          Read the paper <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="paper reveal" data-delay="1">
+        <div class="paper__badge">
+          <span class="chip">Energy Conversion &amp; Management · 2023</span>
+          <p class="paper__doi">10.1016/j.enconman.2023.117999</p>
+        </div>
+        <h3>Analysis and multi-objective evolutionary optimization of a solar-biogas hybrid cascade Kalina organic Rankine cycle for sustainable cooling and green hydrogen production</h3>
+        <ul class="bullets">
+          <li>Built simulation models in Python with <strong>CoolProp</strong>, automating dynamic thermodynamic property acquisition and continuous <strong>4E</strong> (energetic, exergetic, economic, environmental) evaluation under variable boundary conditions.</li>
+          <li>Architected an <strong>NSGA-II</strong> multi-objective optimization framework across <strong>400 generations</strong>, maximizing energy utilization and exergy efficiency while minimizing total system cost — producing a full Pareto frontier.</li>
+          <li>Implemented a two-stage <strong>MCDM</strong> pipeline — CRITIC for objective weighting, then TOPSIS and MABAC for distance-based ranking — to select the optimal configuration from high-dimensional Pareto data.</li>
+        </ul>
+        <a class="proj__link" href="https://doi.org/10.1016/j.enconman.2023.117999" target="_blank" rel="noopener">
+          Read the paper <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STACK ══════════════ -->
+<section class="section" id="stack">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label"><span>05</span> Toolkit</p>
+        <h2 class="sec-title">What I reach for.</h2>
+      </div>
+      <p class="sec-note">Roughly ordered by how often I actually use it, not by how good it looks on a resume.</p>
+    </div>
+
+    <div class="stack">
+      <div class="stack__col reveal">
+        <h3><span class="dot"></span>Machine Learning &amp; AI</h3>
+        <div class="pills">
+          <span>PyTorch</span><span>TensorFlow</span><span>MLX</span><span>Transformers</span><span>LLMs</span>
+          <span>PEFT</span><span>LoRA</span><span>QLoRA</span><span>4-bit NF4</span><span>Double Quantization</span>
+          <span>GPTQ</span><span>GGUF</span><span>Instruction Tuning</span><span>RLHF</span><span>DPO</span>
+          <span>RAG</span><span>Multi-Agent Systems</span><span>U-Net</span><span>CNNs</span><span>LSTM / RNN</span>
+          <span>XGBoost</span><span>LightGBM</span><span>Scikit-learn</span><span>SHAP</span><span>Optuna</span>
+        </div>
+      </div>
+
+      <div class="stack__col reveal" data-delay="1">
+        <h3><span class="dot dot--2"></span>Systems, Serving &amp; MLOps</h3>
+        <div class="pills">
+          <span>CUDA</span><span>cuDNN</span><span>cuBLAS</span><span>TensorRT</span><span>Triton Inference Server</span>
+          <span>vLLM</span><span>llama.cpp</span><span>Ollama</span><span>ONNX</span><span>ExecuTorch</span>
+          <span>TensorFlow Lite</span><span>FSDP</span><span>Docker</span><span>Kubernetes</span>
+          <span>GitHub Actions</span><span>MLflow</span><span>Weights &amp; Biases</span><span>TensorBoard</span>
+          <span>Pytest</span><span>FastAPI</span><span>Gradio</span><span>RAGAS</span>
+        </div>
+      </div>
+
+      <div class="stack__col reveal" data-delay="2">
+        <h3><span class="dot dot--3"></span>Data &amp; Infrastructure</h3>
+        <div class="pills">
+          <span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>CockroachDB</span>
+          <span>Redis</span><span>Kafka</span><span>Celery</span><span>Spark</span><span>Hadoop MapReduce</span>
+          <span>Cassandra</span><span>FAISS</span><span>Qdrant</span><span>Chroma</span><span>Milvus</span>
+          <span>Pinecone</span><span>Elasticsearch</span><span>GCP</span><span>Vertex AI</span>
+        </div>
+      </div>
+
+      <div class="stack__col reveal" data-delay="3">
+        <h3><span class="dot dot--4"></span>Languages &amp; Foundations</h3>
+        <div class="pills">
+          <span>Python</span><span>C++</span><span>C</span><span>Java</span><span>Bash / Shell</span>
+          <span>Julia</span><span>MATLAB</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+          <span>Seaborn</span><span>OpenCV</span><span>PIL</span><span>Linux</span>
+          <span>Statistical Modeling</span><span>Exploratory Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section class="section section--contact" id="contact">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="sec-label"><span>06</span> Contact</p>
+      <h2 class="contact__title">Building something that needs<br>to run fast and stay up?</h2>
+      <p class="contact__lede">
+        I'm open to ML engineering and ML systems roles, research collaborations, and 2026 internships —
+        based in Tempe, AZ and happy to relocate anywhere in the US.
+      </p>
+      <div class="contact__grid">
+        <a class="ccard" href="mailto:vvenug15@asu.edu">
+          <span class="ccard__k">Email</span>
+          <span class="ccard__v">vvenug15@asu.edu</span>
+        </a>
+        <a class="ccard" href="tel:+16235702800">
+          <span class="ccard__k">Phone</span>
+          <span class="ccard__v">+1 623 570 2800</span>
+        </a>
+        <a class="ccard" href="https://www.linkedin.com/in/vignesh5756" target="_blank" rel="noopener">
+          <span class="ccard__k">LinkedIn</span>
+          <span class="ccard__v">in/vignesh5756</span>
+        </a>
+        <a class="ccard" href="https://github.com/vignesh-kumar-v" target="_blank" rel="noopener">
+          <span class="ccard__k">GitHub</span>
+          <span class="ccard__v">vignesh-kumar-v</span>
+        </a>
+        <a class="ccard" href="assets/Vigneshkumar-Venugopal-Resume.pdf" target="_blank" rel="noopener">
+          <span class="ccard__k">Résumé</span>
+          <span class="ccard__v">View PDF &rarr;</span>
+        </a>
+        <div class="ccard ccard--static">
+          <span class="ccard__k">Based in</span>
+          <span class="ccard__v">Tempe, Arizona</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>© <span id="year">2026</span> Vigneshkumar Venugopal</p>
+    <p class="foot__mid">Built from scratch — no framework, no build step.</p>
+    <button class="foot__top" id="toTop">Back to top ↑</button>
+  </div>
+</footer>
+
+<!-- ══════════════ COMMAND PALETTE ══════════════ -->
+<div class="palette" id="palette" hidden>
+  <div class="palette__scrim" data-close></div>
+  <div class="palette__box" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="palette__search">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="paletteInput" type="text" placeholder="Jump to a section, project or link…" autocomplete="off" spellcheck="false">
+      <kbd>ESC</kbd>
+    </div>
+    <ul class="palette__list" id="paletteList"></ul>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
