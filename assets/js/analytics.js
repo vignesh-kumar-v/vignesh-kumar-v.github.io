@@ -14,7 +14,7 @@
 (function () {
   'use strict';
 
-  var TOKEN = '';
+  var TOKEN = '5f357c447055485b8aeeb3c72e11e0b7';
 
   if (!TOKEN) return;
 
