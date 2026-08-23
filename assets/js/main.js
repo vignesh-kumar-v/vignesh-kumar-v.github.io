@@ -26,7 +26,7 @@
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('vk-theme', next); } catch (e) {}
     var meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', next === 'light' ? '#fbfbfd' : '#0a0b0d');
+    if (meta) meta.setAttribute('content', next === 'light' ? '#fdfbf7' : '#0b0a09');
   });
 
   /* ---------------------------------------------------------
@@ -283,11 +283,17 @@
     var pointer = { x: -9999, y: -9999 };
     var LINK = 148;
 
+    // colours come from CSS custom properties, so the canvas follows the theme
+    var cache = { theme: null, node: '', link: '' };
     function palette_() {
-      var light = root.getAttribute('data-theme') === 'light';
-      return light
-        ? { node: 'rgba(53,99,233,',  link: 'rgba(53,99,233,' }
-        : { node: 'rgba(120,160,255,', link: 'rgba(91,140,255,' };
+      var theme = root.getAttribute('data-theme');
+      if (theme !== cache.theme) {
+        var cs = getComputedStyle(root);
+        var node = (cs.getPropertyValue('--canvas-node-rgb') || '120,160,255').trim();
+        var link = (cs.getPropertyValue('--canvas-link-rgb') || '91,140,255').trim();
+        cache = { theme: theme, node: 'rgba(' + node + ',', link: 'rgba(' + link + ',' };
+      }
+      return cache;
     }
 
     function resize() {
