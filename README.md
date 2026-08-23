@@ -106,6 +106,34 @@ Social platforms cache these hard. After changing it, re-scrape via the
 **Custom domain.** Add a `CNAME` file containing the domain, then point a DNS `CNAME` record at
 `vignesh-kumar-v.github.io`.
 
+## Analytics
+
+[Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/) — cookieless, no
+consent banner required, and it does not follow visitors across sites. The site token lives in
+`assets/js/analytics.js` and nowhere else; while that token is empty the file makes no requests
+at all.
+
+It reports visit counts, referrers, countries, page paths, and device types. It does **not**
+report visitor identity — no analytics tool does.
+
+### Tracked share links
+
+Cloudflare deliberately drops query strings, so `?ref=` tags are invisible to it. Tagged links are
+therefore real paths that register in *Top Pages* and then forward to the portfolio:
+
+```bash
+python3 tools/newlink.py nvidia-recruiter --note "Priya, ML infra role"
+#   https://vignesh-kumar-v.github.io/r/nvidia-recruiter/
+
+python3 tools/newlink.py --list        # every link created so far
+```
+
+Commit and push for a link to go live. Send a distinct one to each application or recruiter and
+the dashboard shows which was opened and when — which is as close to "who viewed my portfolio"
+as it is possible to get honestly, because you control who receives each link.
+
+Link pages are `noindex` and canonical to `/`, so they never compete with the portfolio in search.
+
 ## Deployment
 
 Pushing to `main` deploys. GitHub Pages serves the repository root, and `.nojekyll` tells it to
